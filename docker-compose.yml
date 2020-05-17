@@ -1,0 +1,28 @@
+version: "3"
+services:
+ mongo:
+  container_name: mongo-product-catalog
+  image: mongo:4.2.5
+  ports:
+    - "27017:27017"
+  environment:
+    MONGO_INITDB_DATABASE: productCatalog
+  volumes:
+   - ./resources/database_entrypoint/mongodb:/docker-entrypoint-initdb.d
+
+# redis:
+#   container_name: redis
+#   image: redis:5.0
+#   ports:
+#     - "6379:6379"
+#
+# product-catalog:
+#   container_name: product-catalog
+#   image: product-catalog:latest
+#   ports:
+#     - "8080:8080"
+#   environment:
+#     ENVIRONMENT: PRD
+#   depends_on:
+#     - mongo
+##     - redis
