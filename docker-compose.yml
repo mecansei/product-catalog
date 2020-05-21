@@ -1,7 +1,6 @@
 version: "3"
 services:
- mongo:
-  container_name: mongo-product-catalog
+ local-mongo-product-catalog:
   image: mongo:4.2.5
   ports:
     - "27017:27017"

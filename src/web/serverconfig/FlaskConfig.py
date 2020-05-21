@@ -5,6 +5,7 @@ from flask_cors import CORS
 
 from src.web.controller.AppController import app_controller
 from src.web.controller.ProductController import product_controller
+from src.web.controller.AppController import swagger_blueprint
 
 
 class FlaskConfig:
@@ -18,6 +19,7 @@ class FlaskConfig:
     def register_blue_prints(self):
         self.app.register_blueprint(app_controller)
         self.app.register_blueprint(product_controller)
+        self.app.register_blueprint(swagger_blueprint, url_prefix="/swagger")
 
     def run_app(self):
         self.app.run(
