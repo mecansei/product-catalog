@@ -4,9 +4,10 @@ db.productCatalog.insertMany([
         name: "Nike Court Lite 2",
         value: 17.55,
         photos: [
-            "pics/f1.jpg",
-            "pics/f2.jpg",
-            "pics/f3.jpg",
+            "/nike-branco/pic1.jpg",
+            "/nike-branco/pic2.jpg",
+            "/nike-branco/pic3.jpg",
+            "/nike-branco/pic4.jpg"
         ],
         size: 44,
         color: "Branco",
@@ -17,9 +18,10 @@ db.productCatalog.insertMany([
         name: "Wilson Slice Masculino",
         value: 29.00,
         photos: [
-            "pics/f1.jpg",
-            "pics/f2.jpg",
-            "pics/f3.jpg",
+            "/wilson/pic1.jpg",
+            "/wilson/pic2.jpg",
+            "/wilson/pic3.jpg",
+            "/wilson/pic4.jpg"
         ],
         size: 43,
         color: "Amarelo",
@@ -30,9 +32,10 @@ db.productCatalog.insertMany([
         name: "Fila Lugano 6.0",
         value: 10.13,
         photos: [
-            "pics/f1.jpg",
-            "pics/f2.jpg",
-            "pics/f3.jpg",
+            "/fila/pic1.jpg",
+            "/fila/pic2.jpg",
+            "/fila/pic3.jpg",
+            "/fila/pic4.jpg"
         ],
         size: 37,
         color: "Preto",
@@ -43,9 +46,10 @@ db.productCatalog.insertMany([
         name: "Nike Shox Nz Se",
         value: 50.00,
         photos: [
-            "pics/f1.jpg",
-            "pics/f2.jpg",
-            "pics/f3.jpg",
+            "/nike-shox/pic1.jpg",
+            "/nike-shox/pic2.jpg",
+            "/nike-shox/pic3.jpg",
+            "/nike-shox/pic4.jpg"
         ],
         size: 40,
         color: "Preto com Vermelho",
